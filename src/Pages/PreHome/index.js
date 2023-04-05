@@ -5,7 +5,7 @@ import { View, Text} from "react-native";
 export default function PreHome({ navigation }) {
     return(
         <View>
-            <Text>Ola</Text>
+            <Text style={{ fontFamily:'ballob'}}>Olá</Text>
         </View>
     )
 }
