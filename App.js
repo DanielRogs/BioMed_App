@@ -31,7 +31,7 @@ export default function App() {
 
     <NavigationContainer>
       <Stack.Navigator
-        initialRouteName="PreHome"
+        initialRouteName="LoginPage"
         screenOptions={{
           headerShown: false
         }}
