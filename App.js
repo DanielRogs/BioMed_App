@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import * as Font from 'expo-font';
@@ -5,7 +6,7 @@ import AppLoading from 'expo-app-loading';
 
 import PreHome from './src/Pages/PreHome';
 import LoginPage from './src/Pages/LoginPage';
-import { useState } from 'react';
+import HomePage from './src/Pages/HomePage';
 
 const Stack = createNativeStackNavigator();
 
@@ -39,6 +40,7 @@ export default function App() {
       >
         <Stack.Screen name='PreHome' component={PreHome}/>
         <Stack.Screen name='LoginPage' component={LoginPage}/>
+        <Stack.Screen name='HomePage' component={HomePage}/>
       </Stack.Navigator>
     </NavigationContainer>
   );

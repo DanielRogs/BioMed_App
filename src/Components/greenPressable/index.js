@@ -1,13 +1,14 @@
 import React from "react";
 import { StyleSheet, View, Text, Pressable } from "react-native";
 
-export default function greenPressable(props){
+export default function greenPressable(props, { navigation }){
     return(
         <View>
-            <Pressable style={style.buttonFormat}>
+            <Pressable style={({pressed}) => [{elevation: pressed ? 3 : 10,}, style.buttonFormat,]}>
                 <Text style={style.text}>{props.text}</Text>
             </Pressable>
-        </View>  
+        </View> 
+         
     )
 }
 
@@ -16,12 +17,11 @@ const style = StyleSheet.create({
     buttonFormat:{
         width:258,
         height:55,
-        backgroundColor: '#00ffc2',
         borderRadius: 10,
         justifyContent: 'center',
         alignItems: 'center',
-        elevation: 10,
-        shadowColor: '#00ffb2',
+        backgroundColor: '#00ffc2',
+        shadowColor: '#000000',
         shadowOffset: { width: 10, height: 2},
         shadowOpacity: 1,
         shadowRadius: 2
