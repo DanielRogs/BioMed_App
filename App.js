@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { StatusBar } from 'expo-status-bar';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import * as Font from 'expo-font';
@@ -31,19 +32,22 @@ export default function App() {
   }
 
   return (
-
-    <NavigationContainer>
-      <Stack.Navigator
+    <>
+      <StatusBar 
+      translucent
+      backgroundColor='transparent'
+      barStyle='light-content'/>
+      <NavigationContainer>
+        <Stack.Navigator
         initialRouteName="LoginPage"
         screenOptions={{
-          headerShown: false
-        }}
-      >
-        <Stack.Screen name='PreHome' component={PreHome}/>
-        <Stack.Screen name='LoginPage' component={LoginPage}/>
-        <Stack.Screen name='HomePage' component={HomePage}/>
-        <Stack.Screen name='CadPage' component={CadPage}/>
-      </Stack.Navigator>
-    </NavigationContainer>
+        headerShown: false}}>
+          <Stack.Screen name='PreHome' component={PreHome}/>
+          <Stack.Screen name='LoginPage' component={LoginPage}/>
+          <Stack.Screen name='HomePage' component={HomePage}/>
+          <Stack.Screen name='CadPage' component={CadPage}/>
+        </Stack.Navigator>
+      </NavigationContainer>
+    </>
   );
 }

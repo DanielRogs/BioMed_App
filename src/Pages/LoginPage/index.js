@@ -1,5 +1,6 @@
 import React from "react";
-import { View, Text, StyleSheet, Pressable } from "react-native";
+import { View, Text, StyleSheet, Pressable, Image } from "react-native";
+import {widthPercentageToDP as wp, heightPercentageToDP as hp} from 'react-native-responsive-screen';
 
 import PressableG from "../../Components/greenPressable";
 import InputLogECad from "../../Components/inputsCadELogin";
@@ -9,10 +10,11 @@ import Feat from '@expo/vector-icons/Feather';
 export default function LoginPage({ navigation }) {
     return(
         <View style={style.container}>
-            <View>
+            <View style={style.flexD}>
                 <Pressable onPress={() => navigation.navigate('PreHome')}>
-                    <Feat name="arrow-left" size={40} color={"#11D876"}/>
+                    <Feat name="arrow-left" size={40} color={"#11D876"} style={style.positionseta}/>
                 </Pressable>
+                <Image source={require('../../assets/Images/Capa_login.png')} style={style.img}/>
             </View>
             <View>
                 <Text style={style.title}>Login</Text>
@@ -25,7 +27,7 @@ export default function LoginPage({ navigation }) {
             <View style={style.button}>
                 <PressableG text='Acessar'/>
             </View>
-            <View style={style.flexD}>
+            <View style={style.flexD1}>
                 <Text style={style.text1}>Não possui conta?</Text>
                 <View style={{marginTop: '50%', marginLeft: 75}}/>
                 <Pressable onPress={() => navigation.navigate('CadPage')}>
@@ -61,19 +63,37 @@ const style = StyleSheet.create({
         justifyContent: 'space-between'
     },
 
+    flexD1:{
+        flexDirection: "row",
+        alignItems: 'center',
+        justifyContent: 'space-between',
+        top: hp('10%')
+    },
+
     title:{
         fontFamily:'ballob',
         fontSize: 58,
-        marginBottom: '20%',
-        marginLeft: '-35%'
+        marginBottom: hp('5%'),
+        marginLeft: wp('-35%')
     },
 
     button:{
-        marginTop: 30,
+        marginTop: hp('8%'),
     },
 
     espacamento:{
-        marginBottom: '10%',
-        marginTop: 10
+        marginBottom: hp('5%'),
+        marginTop: wp('3%')
+    },
+
+    img:{
+        left: wp('0%'),
+        top: hp('-2.1%'),
+        width: wp('90%'),
+        height: hp('19%')
+    },
+
+    positionseta:{
+        left: wp('5%')
     }
 })
