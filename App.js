@@ -17,6 +17,7 @@ export default function App() {
     'ballob':require('./src/assets/fonts/BalooTammudu2-Bold.ttf'),
     'ballor':require('./src/assets/fonts/BalooTammudu2-Regular.ttf'),
     'ballosb':require('./src/assets/fonts/BalooTammudu2-SemiBold.ttf'),
+    'reemr':require('./src/assets/fonts/ReemKufiInk-Regular.ttf'),
   }).then(() => {
     setDummy(true);
   })
