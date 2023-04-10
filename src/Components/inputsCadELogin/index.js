@@ -1,7 +1,8 @@
 import React from "react";
+import { StyleSheet, TextInput, View, Text } from "react-native";
+
 import Ad from '@expo/vector-icons/AntDesign';
 import Mci from '@expo/vector-icons/MaterialCommunityIcons';
-import { StyleSheet, TextInput, View, Text } from "react-native";
 
 export default function inputsCadELogin(props) {
     return(
@@ -41,7 +42,7 @@ const style = StyleSheet.create({
     },
 
     text:{
-        color: 'blue',
+        color: '#1AB8F7',
         marginLeft: 40,
         marginBottom: 5,
         fontFamily:'reemr'

@@ -7,6 +7,7 @@ import AppLoading from 'expo-app-loading';
 import PreHome from './src/Pages/PreHome';
 import LoginPage from './src/Pages/LoginPage';
 import HomePage from './src/Pages/HomePage';
+import CadPage from './src/Pages/CadPage';
 
 const Stack = createNativeStackNavigator();
 
@@ -41,6 +42,7 @@ export default function App() {
         <Stack.Screen name='PreHome' component={PreHome}/>
         <Stack.Screen name='LoginPage' component={LoginPage}/>
         <Stack.Screen name='HomePage' component={HomePage}/>
+        <Stack.Screen name='CadPage' component={CadPage}/>
       </Stack.Navigator>
     </NavigationContainer>
   );
