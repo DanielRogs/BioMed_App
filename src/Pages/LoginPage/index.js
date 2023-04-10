@@ -55,6 +55,7 @@ const style = StyleSheet.create({
     text2: {
         fontFamily: 'reemr',
         color: '#1AB8F7',
+        textDecorationLine: 'underline'
     },
 
     flexD:{
