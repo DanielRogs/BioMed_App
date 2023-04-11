@@ -1,5 +1,5 @@
 import React from "react";
-import { StyleSheet,View,Text,Pressable } from "react-native";
+import { StyleSheet,View,Text,Pressable,Image } from "react-native";
 import {widthPercentageToDP as wp, heightPercentageToDP as hp} from 'react-native-responsive-screen';
 
 import Feat from '@expo/vector-icons/Feather';
@@ -14,9 +14,11 @@ export default function CadPage({ navigation }) {
                 <Pressable onPress={() => navigation.navigate('LoginPage')}>
                     <Feat name="arrow-left" size={40} color={"#11D876"} style={style.positionseta}/>
                 </Pressable>
+                <Image source={require("../../assets/Images/CapaCad_cima.png")} style={style.img}/>
             </View>
-            <View>
-                <Text style={style.title}>Criar{'\n'}Conta</Text>
+            <View style={style.posicao}>
+                <Text style={style.title}>Criar</Text>
+                <Text style={style.title2}>Conta</Text>
             </View>
             <View style={style.espacamento}>
                 <InputLogECad adname='user' size={30} color='#11D876' text='Nome Completo do Responsável'/>
@@ -31,7 +33,8 @@ export default function CadPage({ navigation }) {
                 <MiniGreenPressable text='Avançar'/>
             </View>
             <View>
-                
+                <Image source={require("../../assets/Images/MeninoRaquete_Cad.png")} style={style.img3}/>
+                <Image source={require("../../assets/Images/CapaCad_baixo.png")} style={style.img2}/>
             </View>
         </View>
     )
@@ -49,17 +52,61 @@ const style = StyleSheet.create({
     title:{
         fontFamily:'ballob',
         fontSize: 58,
-        marginBottom: hp('5%'),
-        marginLeft: wp('-35%'),
-        lineHeight: hp('13%')
+    },
+
+    title2:{
+        fontFamily:'ballob',
+        fontSize: 58,
+        marginTop: hp('-5%')
+    },
+
+    posicao:{
+        marginLeft: wp('-33%'),
+        bottom: hp('53%'),
     },
 
     positionseta:{
-        left: wp('-35%')
+        left: wp('2%'),
+        top: hp('-10%'),
+    },
+
+    espacamento:{
+        position: "relative",
+        zIndex: 1,
+        marginTop: hp('-53%'),
     },
 
     espacamento2:{
-        marginTop: hp('3%'),
-        marginLeft: wp('35%')
+        position: "relative",
+        zIndex: 1,
+        marginTop: hp('4%'),
+        marginLeft: wp('35%'),
+    },
+
+    img:{
+        left: wp('20%'),
+        top: hp('-26%'),
+        width: wp('90%'),
+        height: hp('45%')
+    },
+
+    img2:{
+        position: "relative",
+        zIndex:-1,
+        left: wp('7%'),
+        top: hp('33%'),
+        width: wp('90%'),
+        height: hp('45%'),
+        marginTop: hp('-45%'),
+    },
+
+    img3:{
+        position: "relative",
+        zIndex: 1,
+        left: wp('-13%'),
+        top: hp('41%'),
+        width: wp('95%'),
+        height: hp('45.5%'),
+        marginTop: hp('-45%'),
     }
 })
