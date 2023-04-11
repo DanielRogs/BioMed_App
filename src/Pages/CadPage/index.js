@@ -103,8 +103,8 @@ const style = StyleSheet.create({
     img3:{
         position: "relative",
         zIndex: 1,
-        left: wp('-13%'),
-        top: hp('41%'),
+        left: wp('-14%'),
+        top: hp('41.5%'),
         width: wp('95%'),
         height: hp('45.5%'),
         marginTop: hp('-45%'),
