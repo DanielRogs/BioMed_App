@@ -40,7 +40,7 @@ export default function App() {
       barStyle='light-content'/>
       <NavigationContainer>
         <Stack.Navigator
-        initialRouteName="CadPage2"
+        initialRouteName="PreHome"
         screenOptions={{
         headerShown: false}}>
           <Stack.Screen name='PreHome' component={PreHome}/>

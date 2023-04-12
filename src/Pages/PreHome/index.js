@@ -21,7 +21,7 @@ export default function PreHome({ navigation }) {
             <View style={style.espacamento}>
                 <PressableB text="Entrar" onPress={() => navigation.navigate("LoginPage")}></PressableB>
                 <View style={style.espacamentoBotao}/>
-                <PressableW text="Cadastrar-se"></PressableW>
+                <PressableW text="Cadastrar-se" onPress={() => navigation.navigate("CadPage1")}></PressableW>
             </View>
         </View>
         
