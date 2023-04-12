@@ -30,7 +30,7 @@ export default function LoginPage({ navigation }) {
             <View style={style.flexD1}>
                 <Text style={style.text1}>Não possui conta?</Text>
                 <View style={{marginTop: '50%', marginLeft: 75}}/>
-                <Pressable onPress={() => navigation.navigate('CadPage')}>
+                <Pressable onPress={() => navigation.navigate('CadPage1')}>
                     <Text style={style.text2}>Cadastre-se</Text>
                 </Pressable>
             </View>

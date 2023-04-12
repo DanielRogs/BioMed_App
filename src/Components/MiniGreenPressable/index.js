@@ -4,10 +4,10 @@ import { LinearGradient } from "expo-linear-gradient";
 
 import Ad from '@expo/vector-icons/AntDesign';
 
-export default function MiniGreenPressable(props){
+export default function MiniGreenPressable(props, { navigation }){
     return(
         <View>
-            <Pressable style={({pressed}) => [{elevation: pressed ? 3 : 10,}, style.buttonFormat,]}>
+            <Pressable style={({pressed}) => [{elevation: pressed ? 3 : 10,}, style.buttonFormat,]} onPress={() => navigation.navigate('CadPage2')}>
                 <LinearGradient
                 // Button Linear Gradient
                     colors={['#11D876', '#00FFC2']}

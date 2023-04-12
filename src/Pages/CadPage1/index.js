@@ -7,7 +7,7 @@ import Feat from '@expo/vector-icons/Feather';
 import InputLogECad from "../../Components/inputsCadELogin";
 import MiniGreenPressable from "../../Components/MiniGreenPressable";
 
-export default function CadPage({ navigation }) {
+export default function CadPage1({ navigation }) {
     return(
         <View style={style.container}>
             <View>
