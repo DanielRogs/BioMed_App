@@ -25,7 +25,7 @@ export default function LoginPage({ navigation }) {
                 <InputLogECad mciname='lock-outline' size={30} color='#11D876' text='Senha' secure={true}/>
             </View>
             <View style={style.button}>
-                <PressableG text='Acessar'/>
+                <PressableG text='Acessar' page='HomePage'/>
             </View>
             <View style={style.flexD1}>
                 <Text style={style.text1}>Não possui conta?</Text>

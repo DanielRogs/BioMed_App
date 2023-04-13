@@ -1,15 +1,18 @@
 import React from "react";
 import { StyleSheet,View,Pressable,Text } from "react-native";
 import { LinearGradient } from "expo-linear-gradient";
+import { useNavigation } from '@react-navigation/native';
 
 import Ad from '@expo/vector-icons/AntDesign';
 
-export default function MiniGreenPressable(props, { navigation }){
+export default function MiniGreenPressable(props){
+
+    const navigation = useNavigation();
+
     return(
         <View>
-            <Pressable style={({pressed}) => [{elevation: pressed ? 3 : 10,}, style.buttonFormat,]} onPress={() => navigation.navigate('CadPage2')}>
+            <Pressable style={({pressed}) => [{elevation: pressed ? 3 : 10,}, style.buttonFormat,]} onPress={() => navigation.navigate(props.page)}>
                 <LinearGradient
-                // Button Linear Gradient
                     colors={['#11D876', '#00FFC2']}
                     start={[ 0.1, -1.1 ]}
                     style={style.buttonFormat}>

@@ -1,11 +1,15 @@
 import React from "react";
 import { StyleSheet, View, Text, Pressable } from "react-native";
 import { LinearGradient } from "expo-linear-gradient";
+import { useNavigation } from '@react-navigation/native';
 
-export default function greenPressable(props, { navigation }){
+export default function greenPressable(props){
+
+    const navigation = useNavigation();
+
     return(
         <View>
-            <Pressable style={({pressed}) => [{elevation: pressed ? 3 : 10,}, style.buttonFormat,]}>
+            <Pressable style={({pressed}) => [{elevation: pressed ? 3 : 10,}, style.buttonFormat,]} onPress={() => navigation.navigate(props.page)}>
                 <LinearGradient
                 // Button Linear Gradient
                     colors={['#11D876', '#00FFC2']}

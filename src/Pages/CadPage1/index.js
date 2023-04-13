@@ -8,6 +8,7 @@ import InputLogECad from "../../Components/inputsCadELogin";
 import MiniGreenPressable from "../../Components/MiniGreenPressable";
 
 export default function CadPage1({ navigation }) {
+
     return(
         <View style={style.container}>
             <View>
@@ -30,7 +31,7 @@ export default function CadPage1({ navigation }) {
                 <InputLogECad mciname='lock-open-outline' size={30} color='#11D876' text='Confirmar Senha' secure={true}/>
             </View>
             <View style={style.espacamento2}>
-                <MiniGreenPressable text='Avançar'/>
+                <MiniGreenPressable text='Avançar' page='CadPage2'/>
             </View>
             <View>
                 <Image source={require("../../assets/Images/MeninoRaquete_Cad.png")} style={style.img3}/>

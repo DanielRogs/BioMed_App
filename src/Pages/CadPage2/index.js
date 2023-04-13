@@ -26,7 +26,7 @@ export default function CadPage2({ navigation }) {
                 <InputLogECad mciname='calendar' size={30} color='#11D876' text='Data de nascimento'/>
             </View>
             <View style={style.espacamento2}>
-                <PressableG text='Cadastrar-se'/>
+                <PressableG text='Cadastrar-se' page='LoginPage'/>
             </View>
             <View>
                 <Image source={require("../../assets/Images/CapaCad2_baixo.png")} style={style.img2}/>
