@@ -8,7 +8,8 @@ import AppLoading from 'expo-app-loading';
 import PreHome from './src/Pages/PreHome';
 import LoginPage from './src/Pages/LoginPage';
 import HomePage from './src/Pages/HomePage';
-import CadPage from './src/Pages/CadPage';
+import CadPage1 from './src/Pages/CadPage1';
+import CadPage2 from './src/Pages/CadPage2';
 
 const Stack = createNativeStackNavigator();
 
@@ -39,13 +40,14 @@ export default function App() {
       barStyle='light-content'/>
       <NavigationContainer>
         <Stack.Navigator
-        initialRouteName="LoginPage"
+        initialRouteName="CadPage2"
         screenOptions={{
         headerShown: false}}>
           <Stack.Screen name='PreHome' component={PreHome}/>
           <Stack.Screen name='LoginPage' component={LoginPage}/>
           <Stack.Screen name='HomePage' component={HomePage}/>
-          <Stack.Screen name='CadPage' component={CadPage}/>
+          <Stack.Screen name='CadPage1' component={CadPage1}/>
+          <Stack.Screen name='CadPage2' component={CadPage2}/>
         </Stack.Navigator>
       </NavigationContainer>
     </>
