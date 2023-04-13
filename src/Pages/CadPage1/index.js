@@ -11,7 +11,7 @@ export default function CadPage1({ navigation }) {
     return(
         <View style={style.container}>
             <View>
-                <Pressable onPress={() => navigation.navigate('LoginPage')}>
+                <Pressable onPress={() => navigation.navigate('PreHome')}>
                     <Feat name="arrow-left" size={40} color={"#11D876"} style={style.positionseta}/>
                 </Pressable>
                 <Image source={require("../../assets/Images/CapaCad_cima.png")} style={style.img}/>
@@ -94,7 +94,7 @@ const style = StyleSheet.create({
         position: "relative",
         zIndex:-1,
         left: wp('7%'),
-        top: hp('33%'),
+        top: hp('34%'),
         width: wp('90%'),
         height: hp('45%'),
         marginTop: hp('-45%'),
@@ -103,10 +103,10 @@ const style = StyleSheet.create({
     img3:{
         position: "relative",
         zIndex: 1,
-        left: wp('-14%'),
+        left: wp('-12%'),
         top: hp('41.5%'),
-        width: wp('95%'),
-        height: hp('45.5%'),
+        width: wp('93%'),
+        height: hp('44%'),
         marginTop: hp('-45%'),
     }
 })
