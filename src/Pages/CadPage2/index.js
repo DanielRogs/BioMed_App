@@ -28,6 +28,9 @@ export default function CadPage2({ navigation }) {
             <View style={style.espacamento2}>
                 <PressableG text='Cadastrar-se'/>
             </View>
+            <View>
+                <Image source={require("../../assets/Images/CapaCad2_baixo.png")} style={style.img2}/>
+            </View>
         </View>
     )
 }
@@ -43,12 +46,12 @@ const style = StyleSheet.create({
 
     positionseta:{
         left: wp('2%'),
-        top: hp('-25%'),
+        top: hp('-20%'),
     },
 
     img:{
         left: wp('20%'),
-        top: hp('-38%'),
+        top: hp('-36%'),
         width: wp('90%'),
         height: hp('45%')
     },
@@ -66,13 +69,13 @@ const style = StyleSheet.create({
 
     posicao:{
         marginLeft: wp('-33%'),
-        bottom: hp('67%'),
+        bottom: hp('63%'),
     },
     
     espacamento:{
         position: "relative",
         zIndex: 1,
-        marginTop: hp('-60%'),
+        marginTop: hp('-55%'),
     },
 
     espacamento2:{
@@ -80,4 +83,14 @@ const style = StyleSheet.create({
         zIndex: 1,
         marginTop: hp('5%'),
     },
+
+    img2: {
+        position: "relative",
+        zIndex:-1,
+        left: wp('-5%'),
+        top: hp('40%'),
+        width: wp('90%'),
+        height: hp('45%'),
+        marginTop: hp('-45%'),
+    }
 })
