@@ -8,6 +8,7 @@ import MCI from '@expo/vector-icons/MaterialCommunityIcons';
 import BarNavigate from "../../Components/barNavigate";
 
 export default function HomePage({ navigation }) {
+
     return(
         <View style={style.container}>
             <View style={style.flexD1}>
@@ -21,9 +22,15 @@ export default function HomePage({ navigation }) {
             <View style={{justifyContent: "center", alignItems: "center"}}>
                 <Image source={require('../../assets/Images/Background_HomePage.png')} style={style.background}/>
             </View>
-            <View style={style.flexD2}>
-                <Image source={require('../../assets/Images/Baby_HomePage.png')} style={style.background2}/>
-                <Text style={style.nome}>Pedro Henrique Figueredo</Text>
+            <View style={style.flexD3}>
+                <MCI name="baby" color={'#11D876'} size={75} style={style.background2}/>
+                <View style={style.flexD2}>
+                    <Text style={style.nome}>Davi Rodrigues da Rocha</Text>
+                    <Text style={style.nome2}>235 Coins</Text>
+                </View>
+            </View>
+            <View style={style.grafico}>
+                
             </View>
             <View style={style.posicao}>
                 <BarNavigate/>
@@ -49,10 +56,15 @@ const style = StyleSheet.create({
     },
 
     flexD2:{
+        alignItems: 'center',
+        bottom: hp('10%'),
+    },
+
+    flexD3:{
         flexDirection: 'row',
         alignItems: 'center',
-        justifyContent: 'space-between',
-        top: hp('-20%'),
+        justifyContent: 'center',
+        top: hp('-5%')
     },
 
     background: {
@@ -64,10 +76,8 @@ const style = StyleSheet.create({
     },
 
     background2: {
-        width: wp('20.9%'),
-        height: hp('9%'),
-        top: hp('-10%'),
-        marginRight: wp('5%')
+        marginRight: wp('5%'),
+        bottom: hp('10%'),
     },
 
     nome: {
@@ -75,7 +85,17 @@ const style = StyleSheet.create({
         fontSize: 25
     },
 
+    nome2: {
+        fontFamily: 'ballob',
+        fontSize: 15,
+        color: '#11D876',
+        bottom: hp('1%')
+    },
+
     posicao: {
         bottom: hp('-35%'),
+    },
+
+    grafico: {
     }
 })
