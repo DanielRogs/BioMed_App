@@ -46,7 +46,7 @@ const style = StyleSheet.create({
 
     positionseta:{
         left: wp('2%'),
-        top: hp('-20%'),
+        top: hp('-21%'),
     },
 
     img:{

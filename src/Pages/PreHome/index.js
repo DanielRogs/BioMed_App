@@ -10,8 +10,8 @@ export default function PreHome({ navigation }) {
 
         <View style={style.container}>
             <View style={{justifyContent: "center", alignItems: "center"}}>
-                <Image source={require("../../assets/images/Capa_PreHome.png")} style={style.background}/>
-                <Image source={require("../../assets/images/meninaPulando_PreHome.png")} style={style.background2}/>
+                <Image source={require("../../assets/Images/Capa_PreHome.png")} style={style.background}/>
+                <Image source={require("../../assets/Images/MeninaPulando_PreHome.png")} style={style.background2}/>
             </View>
             <View style={style.principal}>
                 <Text style={{fontFamily:'ballob', fontSize: 58, marginBottom: -40}}>Bem Vindo</Text>
@@ -64,7 +64,7 @@ const style = StyleSheet.create({
     },
 
     espacamentoBotao:{
-        marginBottom: hp('10%')
+        marginBottom: hp('9%')
     },
     
 })
