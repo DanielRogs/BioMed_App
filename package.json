@@ -11,6 +11,7 @@
   "dependencies": {
     "@react-navigation/native": "^6.1.6",
     "@react-navigation/native-stack": "^6.9.12",
+    "@types/react-native-svg-charts": "^5.0.12",
     "chart.js": "^4.2.1",
     "d3-shape": "^3.2.0",
     "expo": "~48.0.10",
@@ -21,8 +22,10 @@
     "react": "18.2.0",
     "react-chartjs-2": "^5.2.0",
     "react-native": "0.71.6",
+    "react-native-chart-kit": "^6.12.0",
     "react-native-responsive-screen": "^1.4.2",
     "react-native-svg-charts": "^5.4.0",
+    "recharts": "^2.5.0",
     "style-components": "^0.1.0"
   },
   "devDependencies": {
