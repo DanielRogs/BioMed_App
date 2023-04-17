@@ -19,7 +19,7 @@ export default function barNavigate(props){
                 </Pressable>
             </View>
             <View>
-                <Pressable style={({pressed}) => [{elevation: pressed ? 3 : 10,}, style.meio]}>
+                <Pressable style={({pressed}) => [{elevation: pressed ? 3 : 10,}, style.meio]} onPress={() => navigation.navigate('HomePage')}>
                     <LinearGradient
                     // Button Linear Gradient
                     colors={['#00FFC2', '#11D876']}
