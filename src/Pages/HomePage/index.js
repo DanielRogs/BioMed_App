@@ -38,17 +38,11 @@ export default function HomePage({ navigation }) {
                     <Text style={style.nome2}>235 Coins</Text>
                 </View>
             </View>
-            <View style={style.caixa}>
+            <View>
                 <Text style={style.nome3}>Estatística da Criança</Text>
             </View>
             <View style={style.grafico}>
                 <Grafico />
-            </View>
-            <View>
-                <Text style={style.nome4}>Saúde:
-                    <Text style={style.nome5}> Excelente</Text>
-                !
-                </Text>
             </View>
             <View style={style.posicao}>
                 <BarNavigate/>
@@ -79,7 +73,7 @@ const style = StyleSheet.create({
         flexDirection: "row",
         alignItems: 'center',
         justifyContent: 'space-between',
-        top: hp('-30%'),
+        top: hp('-33%'),
     },
 
     flexD2:{
@@ -92,8 +86,7 @@ const style = StyleSheet.create({
         flexDirection: 'row',
         alignItems: 'center',
         justifyContent: 'center',
-        top: hp('-22%'),
-        right: wp('0.5%')
+        top: hp('-27%')
     },
 
     background: {
@@ -101,7 +94,7 @@ const style = StyleSheet.create({
         zIndex: 0,
         width: wp('100%'),
         height: hp('70%'),
-        top: hp('2%'),
+        top: hp('-5%'),
     },
 
     nome: {
@@ -116,41 +109,18 @@ const style = StyleSheet.create({
         bottom: hp('1%')
     },
 
-    caixa: {
-        backgroundColor: 'white',
-        bottom: hp('11%'),
-        borderRadius: 50,
-        alignItems: 'center',
-        justifyContent: 'center',
-        width: wp('55%'),
-        elevation: 10
-    },
-
     nome3: {
         fontFamily: 'ballosb',
         fontSize: 20,
-        bottom: hp('-0.5%')
+        bottom: hp('20.5%')
     },
 
     posicao: {
-        bottom: hp('-31%'),
-    },
-
-    nome4: {
-        fontFamily: 'ballosb',
-        fontSize: 25,
-        color: 'white',
-        bottom: hp('-29.5%')
-    },
-
-    nome5: {
-        fontFamily: 'ballosb',
-        color: '#00FFC2',
+        bottom: hp('-33%'),
     },
 
     grafico: {
         position: "absolute",
-        zIndex: 2,
-        bottom: hp('21%'),
+        zIndex: 2
     }
 })
