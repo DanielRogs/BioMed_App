@@ -70,7 +70,7 @@ const style = StyleSheet.create({
 
     ladoDir: {
         position: 'relative',
-        zIndex:-1,
+        zIndex:-2,
         backgroundColor: 'white',
         borderRadius: 15,
         width: wp('22%'),
