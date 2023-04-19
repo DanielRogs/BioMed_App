@@ -151,6 +151,6 @@ const style = StyleSheet.create({
     grafico: {
         position: "absolute",
         zIndex: 2,
-        bottom: hp('21%'),
+        bottom: hp('24%'),
     }
 })
