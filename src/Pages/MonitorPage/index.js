@@ -20,7 +20,7 @@ export default function MonitorPage() {
                                 <Awesome name="child" color={'white'} size={23} style={{ bottom: hp('0.3%')}}/>
                             </LinearGradient>
                             <View style={style.flexD2}>
-                                <Text style={style.nome}>Pedro Henrique Quiroz</Text>
+                                <Text style={style.nome}>Pedro Henrique Queiroz</Text>
                             </View>
                     </View>
 
