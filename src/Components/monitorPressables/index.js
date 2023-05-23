@@ -1,5 +1,6 @@
 import React from "react";
 import { StyleSheet, View, Text, Pressable } from "react-native";
+import { useNavigation } from '@react-navigation/native';
 import {widthPercentageToDP as wp, heightPercentageToDP as hp} from 'react-native-responsive-screen';
 
 import Awesome from '@expo/vector-icons/FontAwesome';
@@ -8,10 +9,13 @@ import Awesome5 from '@expo/vector-icons/FontAwesome5';
 import Ionicons from '@expo/vector-icons/Ionicons';
 
 
-export default function monitorPressable(props, { navigation }){
+export default function monitorPressable(props){
+
+    const navigation = useNavigation();
+
     return(
         <View>
-            <Pressable style={({pressed}) => [{elevation: pressed ? 3 : 10,}, style.buttonFormat,]} onPress={props.onPress}>
+            <Pressable style={({pressed}) => [{elevation: pressed ? 3 : 10,}, style.buttonFormat,]} onPress={() => navigation.navigate(props.Navigate)}>
                 <View style={style.geral}>
                     <View style={style.simbol}>
                         <Awesome name={props.simbolAw} color={'#ffffff'} size={55}/>

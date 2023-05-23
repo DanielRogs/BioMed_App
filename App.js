@@ -11,6 +11,10 @@ import HomePage from './src/Pages/HomePage';
 import CadPage1 from './src/Pages/CadPage1';
 import CadPage2 from './src/Pages/CadPage2';
 import MonitorPage from './src/Pages/MonitorPage';
+import Sangue from './src/Pages/Sangue';
+import Radioterapia from './src/Pages/Radioterapia';
+import Quimioterapia from './src/Pages/Quimioterapia';
+import Consulta from './src/Pages/Consulta';
 
 const Stack = createNativeStackNavigator();
 
@@ -50,6 +54,10 @@ export default function App() {
           <Stack.Screen name='CadPage1' component={CadPage1}/>
           <Stack.Screen name='CadPage2' component={CadPage2}/>
           <Stack.Screen name='MonitorPage' component={MonitorPage}/>
+          <Stack.Screen name='Sangue' component={Sangue}/>
+          <Stack.Screen name='Radioterapia' component={Radioterapia}/>
+          <Stack.Screen name='Quimioterapia' component={Quimioterapia}/>
+          <Stack.Screen name='Consulta' component={Consulta}/>
         </Stack.Navigator>
       </NavigationContainer>
     </>

@@ -30,13 +30,13 @@ export default function MonitorPage() {
                     </View>
 
                     <View style={style.buttonsZone}>
-                        <PressableMon text="Consultas" simbolAw="stethoscope"></PressableMon>
+                        <PressableMon text="Consultas" simbolAw="stethoscope" Navigate="Consulta"></PressableMon>
                         <View style={style.espacamento}/>
-                        <PressableMon text="Quimioterapias" simbolMa="sine-wave"></PressableMon>
+                        <PressableMon text="Quimioterapias" simbolMa="sine-wave" Navigate="Quimioterapia"></PressableMon>
                         <View style={style.espacamento}/>
-                        <PressableMon text="Radioterapias" simbolAw5="x-ray"></PressableMon>
+                        <PressableMon text="Radioterapias" simbolAw5="x-ray" Navigate="Radioterapia"></PressableMon>
                         <View style={style.espacamento}/>
-                        <PressableMon text="Sangue" simbolIo="ios-water-outline"></PressableMon>
+                        <PressableMon text="Sangue" simbolIo="ios-water-outline" Navigate="Sangue"></PressableMon>
                     </View>
 
                 <View style={style.posicao}>
