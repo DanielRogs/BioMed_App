@@ -16,6 +16,7 @@ import Radioterapia from './src/Pages/Radioterapia';
 import Quimioterapia from './src/Pages/Quimioterapia';
 import Consulta from './src/Pages/Consulta';
 import MedicPage from './src/Pages/MedicPage';
+import LojaPage from './src/Pages/LojaPage';
 
 const Stack = createNativeStackNavigator();
 
@@ -60,6 +61,7 @@ export default function App() {
           <Stack.Screen name='Quimioterapia' component={Quimioterapia}/>
           <Stack.Screen name='Consulta' component={Consulta}/>
           <Stack.Screen name='MedicPage' component={MedicPage}/>
+          <Stack.Screen name='LojaPage' component={LojaPage}/>
         </Stack.Navigator>
       </NavigationContainer>
     </>

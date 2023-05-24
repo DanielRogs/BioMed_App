@@ -19,7 +19,7 @@ export default function HomePage({ navigation }) {
                 <Pressable onPress={() => navigation.navigate('PreHome')}>
                     <Ionicons name='exit-outline' size={40} color={"#11D876"} style={{marginRight: wp('65%')}}/>
                 </Pressable>
-                <Pressable>
+                <Pressable onPress={() => navigation.navigate('LojaPage')}>
                     <MCI name='shopping-outline' size={40} color={"#11D876"}/>
                 </Pressable>
             </View>

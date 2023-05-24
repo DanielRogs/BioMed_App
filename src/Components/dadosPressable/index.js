@@ -6,9 +6,9 @@ import {widthPercentageToDP as wp, heightPercentageToDP as hp} from 'react-nativ
 export default function dadosPressable(props){
     return(
         <View style={style.container}>
-            <Pressable style={style.buttonFormat}>
+            <Pressable style={[style.buttonFormat, {backgroundColor: props.bcolor}]}>
                 <View style={style.geral}>
-                    <Text style={style.data}>{props.data}</Text>
+                    <Text style={[style.data, {color: props.ctitle }]}>{props.data}</Text>
                     <Text style={[style.text, {color: props.color }]}>{props.situacao}</Text>
                 </View>
             </Pressable>
@@ -31,7 +31,6 @@ const style = StyleSheet.create({
     },
     
     buttonFormat:{
-        backgroundColor: "#1AB8F7",
         width: wp('75%'),
         height: hp('11%'),
         borderRadius: 8,
@@ -45,7 +44,6 @@ const style = StyleSheet.create({
     },
 
     data:{
-        color: 'white',
         fontFamily:'reemr',
         fontSize:25,
         marginBottom: hp('0.5%')
