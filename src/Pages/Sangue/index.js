@@ -17,10 +17,10 @@ export default function Sangue() {
                 <Ionicons name={'ios-water-outline'} color={'#11D876'} size={200} style={style.posicao1}/>
             </View>
             <View>
-                <BoxData data='10/04/2023' situacao='Coletado' color='#00FFC2'/>
-                <BoxData data='06/03/2023' situacao='Falta'/>
-                <BoxData data='12/02/2023' situacao='Falta'/>
-                <BoxData data='20/01/2023' situacao='Coletado' color='#00FFC2'/>
+                <BoxData data='10/04/2023' situacao='Coletado' ctitle='white' color='#00FFC2' bcolor='#1AB8F7'/>
+                <BoxData data='06/03/2023' situacao='Falta' ctitle='white' bcolor='#1AB8F7'/>
+                <BoxData data='12/02/2023' situacao='Falta' ctitle='white' bcolor='#1AB8F7'/>
+                <BoxData data='20/01/2023' situacao='Coletado' ctitle='white' color='#00FFC2' bcolor='#1AB8F7'/>
             </View>
             <View style={style.posicao}>
                 <BarNavigate/>
