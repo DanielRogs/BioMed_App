@@ -30,7 +30,7 @@ export default function barNavigate(props){
                 </Pressable>
             </View>
             <View style={style.ladoDir}>
-                <Pressable style={({pressed}) => [{elevation: pressed ? 3 : 10,}, style.ladoDir]}>
+                <Pressable style={({pressed}) => [{elevation: pressed ? 3 : 10,}, style.ladoDir]} onPress={() => navigation.navigate('MedicPage')}>
                     <Awesome name="stethoscope" color={'#11D876'} size={45} style={{ left: wp('1.5%')}}/>
                 </Pressable>
             </View>
